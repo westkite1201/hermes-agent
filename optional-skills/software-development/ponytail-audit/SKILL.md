@@ -124,7 +124,7 @@ Never recommend removing these merely to reduce size:
 **Debt ledger mode.** When the user asks what was deferred ("list the
 shortcuts", "ponytail debt"), skip the ranking and collect every deliberate
 shortcut marker instead. Use `search_files` with the regex
-`(#|//|/[*]) ?(shortcut|ponytail):` (or the marker word the user names),
+`\b(shortcut|ponytail):` (or the marker word the user names),
 excluding `.git`, `node_modules` and build output, and write one row per hit,
 grouped by file:
 
